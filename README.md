@@ -2,7 +2,7 @@ Description
 ===========
 
 cmdsrv is a dummy command execution server written in python, backed by the 
-[Bottle Python Webframerowk](http://bottlepy.org/docs/dev/).
+[Bottle Python Webframework](http://bottlepy.org/docs/dev/).
 
 It is used to invoke some commands to be processed on the underlying system and 
 get back stderr, stdout and the return code value. 
