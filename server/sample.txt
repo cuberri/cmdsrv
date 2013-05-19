@@ -1,0 +1,3 @@
+The following shell command post a request for the execution of the command `ls -a -l` on the server :
+
+$ curl -X POST "http://localhost:8055/cmd" -H "Content-Type:application/json" -d '{"cmd":["ls", "-a", "-l"]}'
