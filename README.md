@@ -88,12 +88,14 @@ require any other java library depdendency :
 The jar contains a REST client which can be customized with a preconfigured 
 Jersey WebResource. The jar has some dependencies, see `pom.xml` for details :
 
-    // usging Jersey client
-    ClientConfig clientConfig = new DefaultClientConfig();
-    Client client = Client.create(clientConfig);
-    client.addFilter(new LoggingFilter());
-    CmdsrvRestClientJersey sut = new CmdsrvRestClientJersey(client.resource("http://localhost:8055/cmd"));
-    CmdsrvRequest req = new CmdsrvRequest("echo", "dummy", "cmdsrv");
+```java
+// usging Jersey client
+ClientConfig clientConfig = new DefaultClientConfig();
+Client client = Client.create(clientConfig);
+client.addFilter(new LoggingFilter());
+CmdsrvRestClientJersey sut = new CmdsrvRestClientJersey(client.resource("http://localhost:8055/cmd"));
+CmdsrvRequest req = new CmdsrvRequest("echo", "dummy", "cmdsrv");
+```
 
 console output
 
